@@ -1,0 +1,12 @@
+<div *ngIf="contact">
+    <h2>{{ contact.firstName }} {{ contact.lastName }}</h2>
+    <p><strong>Phone Number:</strong> {{ contact.phoneNumber }}</p>
+    <p><strong>Email:</strong> {{ contact.email }}</p>
+    <p><strong>Birth Date:</strong> {{ contact.birthDate }}</p>
+    <p><strong>Address:</strong> {{ contact.address }}</p>
+</div>
+
+<button mat-button (click)="goBackToList()">
+    <mat-icon>arrow_back</mat-icon>
+    Back to Contacts
+  </button>
