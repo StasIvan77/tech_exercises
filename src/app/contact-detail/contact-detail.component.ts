@@ -30,6 +30,13 @@ export class ContactDetailComponent implements OnInit {
     this.router.navigate(['/contacts']);
   }
 
+  deleteContact(): void {
+    if (this.contact) {
+      this.contactService.deleteContact(this.contact.id);
+      this.router.navigate(['/contacts']);
+    }
+  }
+
   ngOnInit(): void {
     
     

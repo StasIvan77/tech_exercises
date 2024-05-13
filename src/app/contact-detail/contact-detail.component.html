@@ -5,8 +5,10 @@
     <p><strong>Birth Date:</strong> {{ contact.birthDate }}</p>
     <p><strong>Address:</strong> {{ contact.address }}</p>
 </div>
-
+    <button mat-icon-button (click)="deleteContact()">
+    <mat-icon>close</mat-icon>
+  </button>
 <button mat-button (click)="goBackToList()">
     <mat-icon>arrow_back</mat-icon>
     Back to Contacts
-  </button>
+</button>
